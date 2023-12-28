@@ -1,0 +1,110 @@
+:root {
+	--font-size: 15px;
+	--regular: 400;
+	--bold: 700;
+
+	--brightOrange: hsl(31, 77%, 52%);
+	--darkCyan: hsl(184, 100%, 22%);
+	--veryDarkCyan: hsl(179, 100%, 13%);
+	--whiteTransparent: hsla(0, 0%, 100%, 0.75); /*paragraphs */
+	--lightGray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+body {
+	font-size: 15px;
+	font-weight: var(--regular);
+	font-family: 'Lexend Deca', sans-serif;
+	background-color: var(--lightGray);
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--whiteTransparent);
+}
+.hero {
+	margin: 5rem 0;
+}
+
+.card {
+	max-width: 350px;
+	min-height: 400px;
+	padding: 4rem;
+}
+
+#sedan {
+	background-color: var(--brightOrange);
+	border-radius: 0.75rem 0.75rem 0 0;
+}
+#suv {
+	background-color: var(--darkCyan);
+}
+#luxury {
+	background-color: var(--veryDarkCyan);
+	border-radius: 0 0 0.75rem 0.75rem;
+}
+.title {
+	font-size: 2.5em;
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-weight: var(--bold);
+	color: var(--lightGray);
+	margin: 1em 0;
+}
+.description {
+	line-height: 1.8em;
+}
+.btn {
+	all: unset;
+	padding: 1em 2em;
+	background-color: var(--lightGray);
+	border-radius: 2rem;
+	margin-top: 1em;
+}
+#sedan button {
+	color: var(--brightOrange);
+}
+#suv button {
+	color: var(--darkCyan);
+}
+#luxury button {
+	color: var(--veryDarkCyan);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 720px) {
+	.hero {
+		display: flex;
+	}
+	#sedan {
+		border-radius: 0.75rem 0 0 0.75rem;
+	}
+	#luxury {
+		border-radius: 0 0.75rem 0.75rem 0;
+	}
+	#sedan button:hover {
+		background-color: var(--brightOrange);
+		color: var(--whiteTransparent);
+	}
+	#suv button:hover {
+		background-color: var(--darkCyan);
+		color: var(--whiteTransparent);
+	}
+	#luxury button:hover {
+		background-color: var(--veryDarkCyan);
+		color: var(--whiteTransparent);
+	}
+	button:hover {
+		outline: 1px solid var(--whiteTransparent);
+	}
+}
