@@ -36,8 +36,8 @@ Screenshot 3
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Rahulnair1234/Frontend-Mentor-Sites/tree/main/three-column-preview-card-component)
-- Live Site URL: [Add live site URL here](https://rahulnair1234.github.io/Frontend-Mentor-Sites/three-column-preview-card-component/)
+- Solution URL: [Add solution URL here](https://github.com/Rahulnair1234/Frontend-Mentor-Sites/tree/main/results-summary-component)
+- Live Site URL: [Add live site URL here](https://rahulnair1234.github.io/Frontend-Mentor-Sites/results-summary-component/)
 
 ## My process
 
